@@ -42,7 +42,7 @@ const Keyboard = ({
   inActiveLetters,
 }: KeyboardProps) => {
   return (
-    <div className="grid [grid-template-columns:repeat(auto-fit,minmax(75px,1fr))] gap-2 sm:gap-3 lg:gap-5">
+    <div className="grid [grid-template-columns:repeat(auto-fit,minmax(50px,1fr))] gap-2 sm:gap-3 lg:gap-5 max-w-[90vw] mx-auto">
       {KEYS.map((letter, index) => {
         const isActive = activeLetter.includes(letter);
         const isInactive = inActiveLetters.includes(letter);
