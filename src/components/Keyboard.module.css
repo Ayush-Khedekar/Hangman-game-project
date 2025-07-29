@@ -15,22 +15,19 @@
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  margin: 0.2rem; /* small space between buttons */
+  margin: 0.2rem;
 }
 
-/* Active guessed letter */
 .btn.active {
   background-color: hsl(200, 100%, 50%);
   color: white;
 }
 
-/* Disabled guessed letter */
 .btn.inactive {
   opacity: 0.3;
   pointer-events: none;
 }
 
-/* Hover and focus interactions */
 .btn:hover:not(:disabled),
 .btn:focus:not(:disabled) {
   background-color: hsl(200, 100%, 75%);
@@ -38,7 +35,6 @@
   transform: scale(1.02);
 }
 
-/* Responsive adjustments */
 @media (min-width: 480px) {
   .btn {
     font-size: 1.3rem;
