@@ -74,6 +74,7 @@ const App = () => {
         guessedLetter={guessedLetters}
         wordToGuess={wordGuess}
         reveal={isLoser}
+        winner={isWinner}
       />
       <div className="w-full self-stretch">
         <Keyboard
