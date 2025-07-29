@@ -1,50 +1,69 @@
 .btn {
   width: 100%;
-  border: 3px solid black;
-  background: none;
   aspect-ratio: 1 / 1;
-  font-size: 1.8rem; /* base font size for mobile */
+  background: none;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+
+  font-size: 1.1rem; /* Smaller for mobile keypad */
+  padding: 0.3rem;
   text-transform: uppercase;
-  padding: 0.5rem;
-  font-weight: bold;
-  cursor: pointer;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
   color: black;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0.2rem; /* small space between buttons */
 }
 
+/* Active guessed letter */
 .btn.active {
   background-color: hsl(200, 100%, 50%);
   color: white;
 }
 
+/* Disabled guessed letter */
 .btn.inactive {
   opacity: 0.3;
   pointer-events: none;
 }
 
+/* Hover and focus interactions */
 .btn:hover:not(:disabled),
 .btn:focus:not(:disabled) {
   background-color: hsl(200, 100%, 75%);
+  outline: none;
+  transform: scale(1.02);
 }
 
-/* ✅ Responsive font size and padding */
+/* Responsive adjustments */
+@media (min-width: 480px) {
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.35rem;
+    margin: 0.25rem;
+  }
+}
 
 @media (min-width: 640px) {
   .btn {
-    font-size: 2.2rem;
-    padding: 0.6rem;
+    font-size: 1.5rem;
+    padding: 0.4rem;
   }
 }
 
 @media (min-width: 768px) {
   .btn {
-    font-size: 2.5rem;
-    padding: 0.7rem;
+    font-size: 1.7rem;
+    padding: 0.45rem;
   }
 }
 
 @media (min-width: 1024px) {
   .btn {
-    font-size: 2.8rem;
-    padding: 0.8rem;
+    font-size: 1.9rem;
+    padding: 0.5rem;
   }
 }
