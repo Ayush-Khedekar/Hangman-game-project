@@ -1,5 +1,5 @@
 const HEAD = (
-  <div className="w-[13%] aspect-square rounded-full border-[1vw] border-black absolute top-[10%] right-[-6%]" />
+  <div className="w-[15%] aspect-square rounded-full border-[1vw] border-black absolute top-[11%] right-[-6.5%]" />
 );
 
 const BODY = (
